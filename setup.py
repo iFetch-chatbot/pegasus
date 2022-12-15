@@ -22,7 +22,7 @@ with open('README.md') as fp:
 
 setuptools.setup(
     name='pegasus',
-    version='0.0.1',
+    version='0.0.2',
     description='Pretraining with Extracted Gap Sentences for Abstractive Summarization with Sequence-to-sequence model',
     long_description=_LONG_DESCRIPTION,
     long_description_content_type='text/markdown',
@@ -40,13 +40,13 @@ setuptools.setup(
         'rouge-score',
         'sacrebleu',
         'sentencepiece',
-        'tensorflow==1.15',
-        'tensorflow-text==1.15.0rc0',
+        'tensorflow==2.11.0',
+        'tensorflow-text==2.11.0',
         'tfds-nightly',
-        'tensor2tensor==1.15.0',
+        'tensor2tensor==1.15.7',
     ],
     extras_require={
-        'tensorflow': ['tensorflow==1.15'],
+        'tensorflow': ['tensorflow==2.11.0'],
     },
     classifiers=[
         'Development Status :: 4 - Beta',
